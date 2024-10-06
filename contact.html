@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar Section -->
+  <!-- Navbar Section -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="#">GlobeTrek Adventures</a>
+
+    <!-- Offcanvas button for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas (Mobile Menu) -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GlobeTrek Adventures</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Navigation Links -->
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="contact-section mt-5 pt-5">
+  <div class="contact-content">
+    <h1>Contact</h1>
+    <div class="line"></div>
+  </div>
+</section>
+
+   
+  <div class="enquire">
+    <h1>How Can We Help You?</h1>
+  </div>
+
+  <section class="form-section">
+    
+    <form action="">
+        <div class="input-row">
+            <div class="input-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" required/>
+            </div>
+            <div class="input-group">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" required/>
+            </div>
+        </div>
+
+        
+        <div class="input-row">
+            <div class="input-group">
+                <label for="phone">Your Phone *</label>
+                <input type="text" id="phone" required/>
+            </div>
+            <div class="input-group">
+                <label for="subject">Your Subject *</label>
+                <input type="text" id="subject" required/>
+            </div>
+        </div>
+
+        <!-- Full width textarea for message -->
+        <div class="input-group">
+            <label for="message">Write Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-section">
+            <input type="submit" class="submit-button" value="Submit"/>
+        </div>
+    </form>
+</section>
+<section class="footer-section bg-dark text-light py-4">
+  <div class="container">
+      <div class="row">
+          <!-- Left Side: Logo and Description -->
+          <div class="col-md-6 mb-4">
+              <h4 class="footer-logo">Globetrek Adventures</h4>
+              <p class="footer-description text-secondary">
+                  At Globetrek Adventures, we believe travel is more than just a trip. It’s a chance to explore, discover new cultures, and create lifelong memories. Whether you’re after a peaceful retreat, thrilling adventure, or family getaway, we craft the perfect journey for you. Explore the world your way, with Globetrek Adventures – where every trip becomes a story.
+              </p>
+              <div class="social-icons">
+                  <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                  <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                  <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+              </div>
+          </div>
+
+          <!-- Right Side: Quick Links and Contact Info -->
+          <div class="col-md-3 mb-4">
+              <h4 class="underline">Quick Links</h4>
+              
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-light">Home</a></li>
+                  <li><a href="#" class="text-light">Tours</a></li>
+                  <li><a href="#" class="text-light">Explore</a></li>
+                  <li><a href="#" class="text-light">About</a></li>
+                  <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-3">
+              <h4 class="underline">For More Details</h4>
+              
+              <ul class="list-unstyled phone-numbers">
+                  <li class="text-light">04868-272270</li>
+                  <li class="text-light">9207772435</li>
+                  <li class="text-light">9207772452</li>
+                  <li class="text-light">9207772470</li>
+                  <li class="text-light">9207772490</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- JavaScript to handle opening and closing the overlay -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

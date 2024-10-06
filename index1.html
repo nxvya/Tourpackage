@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <style>
+    .container1 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+           
+        }
+
+        /* Video Styles */
+        .background-clip {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1; /* Place video behind the content */
+            transform: translate(-50%, -50%); /* Center the video */
+            object-fit: cover; /* Cover the entire area */
+        }
+
+        .content12 {
+            position: relative; /* Position relative to the container */
+            z-index: 2; /* Place content above the video */
+            text-align: center;
+            color: white; /* Text color */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for true center */
+        }
+
+        .content12 h1 {
+            font-size: 50px; /* Adjusted font size for better responsiveness */
+            margin-bottom: 20px;
+        }
+
+        .content12 a {
+            font-size: 23px;
+            color: #ccc;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 15px 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .content12 a:hover {
+            background-color: white;
+            color: black;
+        }
+ </style>   
+</head>
+<body>
+   <!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.3); border-bottom: 1px solid hsla(0, 10%, 77%, 0.2);" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Globetrek Adventures</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <!--bg vedio-->
+    <div class="container1">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images/bg_vedio.mp4" type="video/mp4">
+        </video>
+        <div class="content12">
+         <h1>Let Us Plan You a<br> Perfect Holiday</h1>
+         <a href="#">explore More</a>
+        </div>
+   </div>
+
+    
+   <section class="why-section py-5">
+    <div class="container">
+      <h1 class="heading3">Why We're Your Best Choice</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Best Customer Service</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam qui dolor ab accusantium nulla, aliquam voluptate repudiandae animi reprehenderit iusto aperiam, maxime quidem esse tenetur! Dolorum vitae molestiae corporis blanditiis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Best Staff</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, error! Ducimus quia, nemo, sequi consequuntur pariatur dolorem voluptates doloribus temporibus ullam unde fugit consectetur eaque molestiae, debitis laboriosam! Tenetur, earum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">24/7 Assistance</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio totam ex dolorem unde velit impedit excepturi magnam. Provident dolorum debitis laudantium natus necessitatibus consequatur nihil voluptatum voluptas! Iusto, quasi!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start new row for the last two cards -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Diverse Packages</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odio totam ex dolorem unde velit impedit excepturi magnam. Provident dolorum debitis laudantium natus necessitatibus consequatur nihil voluptatum voluptas! Iusto, quasi!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Affordable Tour Packages</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis quod possimus magni quas non dolore blanditiis natus corporis, temporibus ipsa neque nobis dolores voluptatibus quasi modi, ea similique? Ab.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+  <section class="section-two">
+      <h2>Top Trending Destinations</h2>
+      <div class="destination-grid">
+          <div class="card-container">
+              <div class="image-container">
+                  <img src="images/kerala.jpg" alt="kerala">
+              </div>
+              <h1> Kerala</h1>
+          </div>
+
+          <div class="card-container">
+              <div class="image-container">
+                  <img src="images/maldives-island.jpg" alt="maldives-island">
+              </div>
+              <h1>Maldives</h1>
+          </div>
+
+          <div class="card-container">
+              <div class="image-container">
+                  <img src="images/manali.jpg" alt="Manali">
+              </div>
+              <h1>Manali</h1>
+          </div>
+
+          <div class="card-container">
+              <div class="image-container">
+                  <img src="images/swiz.jpg" alt="Switzerland">
+              </div>
+              <h1>Switzerland</h1>
+          </div>
+
+          <div class="card-container">
+              <div class="image-container">
+                  <img src="images/thailand.jpg" alt="Thailand">
+              </div>
+              <h1>Thailand</h1>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="section-three">
+    <h2>Our Most Popular Tour Packages</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Educational Tours -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/education.jpg" alt="education">
+                    </div>
+                    <h1>Educational Tours</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cruise Packages -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/cruise.jpg" alt="cruise">
+                    </div>
+                    <h1>Cruise Packages</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eco Tours -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/nature.jpg" alt="eco">
+                    </div>
+                    <h1>Eco Tours</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wildlife and Nature Tours -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/luxury.jpg" alt="wildlife">
+                    </div>
+                    <h1>Wildlife and Nature Tours</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Tours -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/luxury.jpg" alt="luxury">
+                    </div>
+                    <h1>Luxury Tours</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural and Historical Tours -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/historical.jpg" alt="historical">
+                    </div>
+                    <h1>Cultural and Historical Tours</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Vacation -->
+            <div class="swiper-slide">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="images/family.jpg" alt="family">
+                    </div>
+                    <h1>Family Vacation</h1>
+                    <div class="rating">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div class="book-now-container">
+                        <a href="contact.html">
+                            <button>Book Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        
+    </div>
+</section>
+
+
+
+  
+
+  <section class="footer-section bg-dark text-light py-4">
+      <div class="container">
+          <div class="row">
+              <!-- Left Side: Logo and Description -->
+              <div class="col-md-6 mb-4">
+                  <h4 class="footer-logo">Globetrek Adventures</h4>
+                  <p class="footer-description text-secondary">
+                      At Globetrek Adventures, we believe travel is more than just a trip. It’s a chance to explore, discover new cultures, and create lifelong memories. Whether you’re after a peaceful retreat, thrilling adventure, or family getaway, we craft the perfect journey for you. Explore the world your way, with Globetrek Adventures – where every trip becomes a story.
+                  </p>
+                  <div class="social-icons">
+                      <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                      <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                      <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                  </div>
+              </div>
+  
+              <!-- Right Side: Quick Links and Contact Info -->
+              <div class="col-md-3 mb-4">
+                  <h4 class="underline">Quick Links</h4>
+                  
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-light">Home</a></li>
+                      <li><a href="#" class="text-light">Tours</a></li>
+                      <li><a href="#" class="text-light">Explore</a></li>
+                      <li><a href="#" class="text-light">About</a></li>
+                      <li><a href="#" class="text-light">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-3">
+                  <h4 class="underline">For More Details</h4>
+                  
+                  <ul class="list-unstyled phone-numbers">
+                      <li class="text-light">04868-272270</li>
+                      <li class="text-light">9207772435</li>
+                      <li class="text-light">9207772452</li>
+                      <li class="text-light">9207772470</li>
+                      <li class="text-light">9207772490</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  
+                   
+<!-- Swiper JS Initialization -->
+<script>
+  const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      breakpoints: {
+          640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+          },
+          1024: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+          },
+      },
+  });
+</script>
+
+
+
+     <!-- JavaScript to handle opening and closing the overlay -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+ </body>
+</body>
+</html>

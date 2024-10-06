@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+ 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <style>
+   
+    .swiper-container {
+      width: 65%; 
+      max-width:85%;
+      margin: 0 auto; 
+    }
+
+    .gallery-image img {
+      width: 65%; 
+      height: 500px; 
+    }
+
+ 
+    .swiper-pagination {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 22px;
+      height: 12px;
+      background-color: rgb(24, 23, 23); 
+      border-radius: 25%; 
+      margin: 0 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: hsl(216, 80%, 64%);
+    }
+
+    .swiper-pagination-bullet:hover {
+      background-color: hsl(199, 77%, 62%);
+    }
+
+    /* Media Queries for further customization on mobile and desktop */
+    @media (max-width: 768px) {
+      .gallery-image img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .swiper-container {
+        width: 80%; /* A bit narrower on larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Globetrek Adventures</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="tours.html">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="about-banner text-center py-5">
+        <div class="about-container">
+            <h1 class="display-4">Gallery</h1>
+        </div>
+    </section>
+  
+  <section class="section-three text-center">
+    
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Educational Tours -->
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="images/thailand.jpg" alt="education">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="images/kerala.jpg" alt="education">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="images/swiz.jpg" alt="education">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="images/scenery.jpg" alt="education">
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  
+  </section>
+  <section class="footer-section bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Logo and Description -->
+            <div class="col-md-6 mb-4">
+                <h4 class="footer-logo">Globetrek Adventures</h4>
+                <p class="footer-description text-secondary">
+                    At Globetrek Adventures, we believe travel is more than just a trip. It’s a chance to explore, discover new cultures, and create lifelong memories. Whether you’re after a peaceful retreat, thrilling adventure, or family getaway, we craft the perfect journey for you. Explore the world your way, with Globetrek Adventures – where every trip becomes a story.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Quick Links and Contact Info -->
+            <div class="col-md-3 mb-4">
+                <h4 class="underline">Quick Links</h4>
+                
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li>
+                    <li><a href="#" class="text-light">Tours</a></li>
+                    <li><a href="#" class="text-light">Explore</a></li>
+                    <li><a href="#" class="text-light">About</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="underline">For More Details</h4>
+                
+                <ul class="list-unstyled phone-numbers">
+                    <li class="text-light">04868-272270</li>
+                    <li class="text-light">9207772435</li>
+                    <li class="text-light">9207772452</li>
+                    <li class="text-light">9207772470</li>
+                    <li class="text-light">9207772490</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>  
+
+<!-- Swiper JS Initialization -->
+<script>
+  const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1, // Only one image at a time
+      spaceBetween: 0, // Small space between slides
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      breakpoints: {
+          640: {
+              slidesPerView: 1, // Ensure 1 slide per view on small screens
+              spaceBetween: 0,
+          },
+          768: {
+              slidesPerView: 1, // Ensure 1 slide per view on medium screens
+              spaceBetween: 0,
+          },
+          1024: {
+              slidesPerView: 1, // Ensure 1 slide per view on larger screens
+              spaceBetween: 0,
+          },
+      },
+  });
+</script>
+
+</body>
+</html>
